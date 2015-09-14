@@ -1,4 +1,9 @@
-var conf = require('./conf.json');
+//var conf = require('./conf.json');
+
+var conf = {
+    appid: 'your-app-id',
+    secret: 'your-secret'
+};
 
 Date.prototype.Format = function (fmt) {
     var o = {
