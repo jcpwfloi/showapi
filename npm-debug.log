@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.32
+4 verbose publish [ './' ]
+5 verbose cache add [ './', null ]
+6 verbose cache add spec="./" args=["./",null]
+7 verbose parsed spec { raw: './',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: null,
+7 verbose parsed spec   rawSpec: './',
+7 verbose parsed spec   spec: '/Users/davidchen/GitHub/showapi',
+7 verbose parsed spec   type: 'local' }
+8 verbose cache add local package /Users/davidchen/GitHub/showapi
+9 silly lockFile 0ee6c175- ./
+10 verbose lock ./ /Users/davidchen/.npm/0ee6c175-.lock
+11 verbose tar pack [ '/Users/davidchen/.npm/sdk-showapi/1.0.1/package.tgz', './' ]
+12 verbose tarball /Users/davidchen/.npm/sdk-showapi/1.0.1/package.tgz
+13 verbose folder ./
+14 info prepublish sdk-showapi@1.0.1
+15 silly lockFile 04cb2bca-tar tar://./
+16 verbose lock tar://./ /Users/davidchen/.npm/04cb2bca-tar.lock
+17 silly lockFile f306ea46-pm-sdk-showapi-1-0-1-package-tgz tar:///Users/davidchen/.npm/sdk-showapi/1.0.1/package.tgz
+18 verbose lock tar:///Users/davidchen/.npm/sdk-showapi/1.0.1/package.tgz /Users/davidchen/.npm/f306ea46-pm-sdk-showapi-1-0-1-package-tgz.lock
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 04cb2bca-tar tar://./
+21 silly lockFile f306ea46-pm-sdk-showapi-1-0-1-package-tgz tar:///Users/davidchen/.npm/sdk-showapi/1.0.1/package.tgz
+22 silly lockFile f306ea46-pm-sdk-showapi-1-0-1-package-tgz tar:///Users/davidchen/.npm/sdk-showapi/1.0.1/package.tgz
+23 silly lockFile 1c6b7840-en-npm-sdk-showapi-1-0-1-package /Users/davidchen/.npm/sdk-showapi/1.0.1/package
+24 verbose lock /Users/davidchen/.npm/sdk-showapi/1.0.1/package /Users/davidchen/.npm/1c6b7840-en-npm-sdk-showapi-1-0-1-package.lock
+25 silly lockFile 1c6b7840-en-npm-sdk-showapi-1-0-1-package /Users/davidchen/.npm/sdk-showapi/1.0.1/package
+26 silly lockFile 1c6b7840-en-npm-sdk-showapi-1-0-1-package /Users/davidchen/.npm/sdk-showapi/1.0.1/package
+27 silly lockFile 0ee6c175- ./
+28 silly lockFile 0ee6c175- ./
+29 silly publish { name: 'sdk-showapi',
+29 silly publish   version: '1.0.1',
+29 silly publish   main: 'index.js',
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   author: { name: 'jcpwfloi', email: 'jcpwfloi@gmail.com' },
+29 silly publish   license: 'MIT',
+29 silly publish   dependencies: { crypto: '0.0.3', request: '^2.61.0' },
+29 silly publish   devDependencies: {},
+29 silly publish   repository: { type: 'git', url: 'https://github.com/jcpwfloi/showapi' },
+29 silly publish   bugs: { url: 'https://github.com/jcpwfloi/showapi/issues' },
+29 silly publish   homepage: 'https://github.com/jcpwfloi/showapi',
+29 silly publish   readme: '# ShowAPI NodeJS SDK 使用方法\n\n## 安装\n    npm install sdk-showapi\n\n## 使用\n    require(\'showapi\').api(url, [\n                {key: \'\', value: \'\'},\n                {key: \'\', value: \'\'}\n            ], function(err, res) {\n            });\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: 'db2d1072272624efeab36836ac585af0004fdad2',
+29 silly publish   description: '## 安装     npm install sdk-showapi',
+29 silly publish   _id: 'sdk-showapi@1.0.1',
+29 silly publish   _shasum: '94322e0cc82e32eac30a609123e29b074ee776f2',
+29 silly publish   _from: '.' }
+30 verbose mapToRegistry name sdk-showapi
+31 verbose mapToRegistry uri https://registry.npmjs.org/sdk-showapi
+32 verbose publish registryBase https://registry.npmjs.org/
+33 verbose request on initialization, where is /sdk-showapi
+34 verbose request after pass 1, where is /sdk-showapi
+35 verbose request url raw /sdk-showapi
+36 verbose request resolving registry [ 'https://registry.npmjs.org/', './sdk-showapi' ]
+37 verbose request after pass 2, where is https://registry.npmjs.org/sdk-showapi
+38 verbose request sending authorization for write operation
+39 info attempt registry request try #1 at 10:27:54
+40 verbose request using bearer token for auth
+41 verbose request id f8361c156f890403
+42 http request PUT https://registry.npmjs.org/sdk-showapi
+43 http 403 https://registry.npmjs.org/sdk-showapi
+44 verbose headers { 'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=60',
+44 verbose headers   'content-length': '95',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   date: 'Mon, 14 Sep 2015 02:27:55 GMT',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   connection: 'keep-alive',
+44 verbose headers   'x-served-by': 'cache-nrt6125-NRT',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1442197674.893460,VS0,VE303' }
+45 error publish Failed PUT 403
+46 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : sdk-showapi
+46 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:261:14)
+46 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+46 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+46 verbose stack     at Request.emit (events.js:98:17)
+46 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+46 verbose stack     at Request.emit (events.js:117:20)
+46 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+46 verbose stack     at IncomingMessage.emit (events.js:117:20)
+46 verbose stack     at _stream_readable.js:943:16
+46 verbose stack     at process._tickCallback (node.js:419:13)
+47 verbose statusCode 403
+48 verbose pkgid sdk-showapi
+49 verbose cwd /Users/davidchen/GitHub/showapi
+50 error Darwin 14.0.0
+51 error argv "node" "/usr/local/bin/npm" "publish" "./"
+52 error node v0.10.32
+53 error npm  v2.0.0
+54 error code E403
+55 error "You cannot publish over the previously published version 1.0.1." : sdk-showapi
+56 error If you need help, you may report this error at:
+56 error     <http://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
