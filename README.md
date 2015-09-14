@@ -6,15 +6,20 @@
 ## 配置
 在node\_module下找到sdk-showapi，修改index.js中的conf。
 
+```javascript
     var conf = {
         appid: '这里填写您的appid',
         secret: '这里填写您的secret'
     };
+```
 
 ## 使用
 其中res返回的是showapi服务器返回的json
+
+```javascript
     require('showapi').api(url, [
                 {key: '', value: ''},
                 {key: '', value: ''}
             ], function(err, res) {
             });
+```
