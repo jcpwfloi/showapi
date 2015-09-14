@@ -1,7 +1,7 @@
 # ShowAPI NodeJS SDK 使用方法
 
 ## 安装
-    npm install showapi
+    npm install sdk-showapi
 
 ## 使用
     require('showapi').api(url, [
