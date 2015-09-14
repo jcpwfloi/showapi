@@ -1,7 +1,6 @@
 {
   "name": "sms-sdk",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,14 @@
   "dependencies": {
     "crypto": "0.0.3",
     "request": "^2.61.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcpwfloi/showapi"
+  },
+  "bugs": {
+    "url": "https://github.com/jcpwfloi/showapi/issues"
+  },
+  "homepage": "https://github.com/jcpwfloi/showapi"
 }
